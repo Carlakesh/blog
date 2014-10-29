@@ -17,6 +17,7 @@
 
  $exists = $connection->select_db($database);
 //checking if data base excists or not 
+ 
 if(!$exists) {
 	$query = $connection->query ("CREATE DATABASE $database");
 if ($query) {
