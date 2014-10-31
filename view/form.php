@@ -9,10 +9,11 @@ as anything special for the user. However, it provides a usability improvement f
 The for attribute of the <label> tag should be equal to the id attribute of the 
 related element to bind them together. --> 
 	<label for="title"> Title : </label>
+	<input type="text" name="title" />
 </div>
 <!-- this div is for post -->
 <div>
-	
+	<label for="post">Post: </label>
+	<textarea name="post"></textarea>
 </div>
-
 </form>
