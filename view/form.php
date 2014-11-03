@@ -16,4 +16,8 @@ related element to bind them together. -->
 	<label for="post">Post: </label>
 	<textarea name="post"></textarea>
 </div>
+<!--creating a submit button -->
+<div>
+	<button type="submit"> Submit </button>
+</div>
 </form>
