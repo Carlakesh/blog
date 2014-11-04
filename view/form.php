@@ -1,6 +1,13 @@
+<?php
+//calling out the right path to config file 
+require_once(__DIR__ . "/../model/config.php");
+?> 
 <h1> Create blog post</h1>
 <!--The form tag is used to create an HTML form for user input.-->
-<form> 
+<!-- we put method in form bracet to tell it either to send or recieve info -->
+<!-- in this specific code, were telling it to send info -->
+<!-- action to tell the code what to do specificly, were going to connect create-post to this file -->
+<form method="post" action="<?php echo $path . "controller/create-post.php"; ?>"> 
 <!-- this div is for title -->
 <div>
 <!-- The <label> tag defines a label for an <input> element.The <label> element does not render 
