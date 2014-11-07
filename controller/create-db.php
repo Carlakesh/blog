@@ -13,8 +13,7 @@
  //if error , program has to die off . 
  if($connection->connect_error) {
  	die("<p> Error: " . $connection->connect_error . "</p>");
-
- }
+}
 //call the database 
 
  $exists = $connection->select_db($database);
