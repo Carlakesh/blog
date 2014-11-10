@@ -1,4 +1,5 @@
 <?php
+//calling the right file
 require_once(__DIR__ . "/../model/database.php");
 //connection variable database
 $connection = new mysqli($host , $username, $password, $datebase);
