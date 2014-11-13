@@ -1,6 +1,6 @@
 <?php
 //calling the right file
-require_once(__DIR__ . "/../model/database.php");
+require_once(__DIR__ . "/../model/config.php");
 //connection variable database
 $connection = new mysqli($host, $username, $password, $database);
 //storing the text into a variable , input is to filter the input making sure no errors with the input.
@@ -11,7 +11,6 @@ $connection = new mysqli($host, $username, $password, $database);
 	$post = filter_input(INPUT_POST , "post" , FILTER_SANITIZE_STRING);
 //see if query runs successfully , establish query to database
 	//using single quote on the title to make sure it was being sent, its a string thats being stored
-
 $query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'") ;
 //checking if a true value is stored within query 
 //if its true
