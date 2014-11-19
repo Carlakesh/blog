@@ -21,5 +21,5 @@ echo "<p> Successfully inserted post: $title </p> ";
 else{
 	echo "<p> $connection->error </p>";
 }
-
+//closing the connection
 $connection->close(); 
