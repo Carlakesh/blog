@@ -6,8 +6,6 @@
 //whats in require once is is file that you want to load 
  require_once(__DIR__ . "/../model/config.php");
  
-//data base that saves objects 
- $connection = new mysqli($host , $username, $password);
 
 //checks if theres an error 
  //if error , program has to die off . 

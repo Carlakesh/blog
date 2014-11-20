@@ -1,8 +1,7 @@
 <?php
 //calling the right file
 require_once(__DIR__ . "/../model/config.php");
-//connection variable database
-$connection = new mysqli($host, $username, $password, $database);
+
 //storing the text into a variable , input is to filter the input making sure no errors with the input.
 // Input post is to send the info to us so we can recieve it.
 //Sanatize string is to make sure no errors are going on
@@ -21,5 +20,3 @@ echo "<p> Successfully inserted post: $title </p> ";
 else{
 	echo "<p> $connection->error </p>";
 }
-//closing the connection
-$connection->close(); 

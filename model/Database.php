@@ -34,7 +34,16 @@ if($this->$connection->connect_error) {
 	}
 //everytime we call our query function we have to call a string can be located in the variable
 	public function query($string) {
-		
+		//calling a function and openning it
+		$this->openConnection();
+		//this will exicute a query in our database
+		//takes in a string of texts the queries the string to the database below
+
+		$query = $this->connection->query($string);
+
+		$this->closeConnection();
+
+		return $query;
 	}
 }
 //we make a class to call it later on
