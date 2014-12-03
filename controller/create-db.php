@@ -8,7 +8,7 @@
 
 //creating a table
 //Table functions 
-$query = $connection->query("CREATE TABLE posts ("
+$query = $_SESSION["connection"]->query("CREATE TABLE posts ("
 	//null indicates that when ever we create a new blog post the id cant be known and id cant be empty
 	//each blog post needs an id
 	. "id int (11) NOT NULL AUTO_INCREMENT,"
@@ -29,7 +29,9 @@ if($query) {
 //else statement
 else {
 	//error statement 
-	echo "<p> $connection->error </p>";
+	//there is two double quotes that is being used, and thats an issue
+	//had to cuncatinate 
+	echo "<p>".  $_SESSION["connection"]->error . " </p>";
 }
 
  

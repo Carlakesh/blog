@@ -10,13 +10,15 @@ require_once(__DIR__ . "/../model/config.php");
 	$post = filter_input(INPUT_POST , "post" , FILTER_SANITIZE_STRING);
 //see if query runs successfully , establish query to database
 	//using single quote on the title to make sure it was being sent, its a string thats being stored
-$query = $connection->query("INSERT INTO posts SET title = '$title', post = '$post'") ;
+$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post'") ;
 //checking if a true value is stored within query 
 //if its true
 if($query) {
-echo "<p> Successfully inserted post: $title </p> ";
+	echo "<p> Successfully inserted post: $title </p> ";
 }
 
+//there is two double quotes that is being used, and thats an issue
+	//had to cuncatinate 
 else{
-	echo "<p> $connection->error </p>";
+	echo "<p>" .  $_SESSION["connection"]->error "</p>";
 }
