@@ -1,6 +1,7 @@
 <?php
 //accessing info
 require_once(__DIR__ . "/Database.php");
+require_once(__DIR__ . "/date.php");
 //were creating a new database over and over again, this will help by proserving infos, we wont have to gernorate the info
 session_start();
 
@@ -21,6 +22,7 @@ if(!isset($_SESSION["connection"])) {
 	//session variable,  were signing a value to it after the equal sign
 	$_SESSION["connection"] = $connection;
 }
+
 
 
 

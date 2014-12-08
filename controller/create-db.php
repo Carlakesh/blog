@@ -34,5 +34,22 @@ else {
 	echo "<p>".  $_SESSION["connection"]->error . " </p>";
 }
 
- 
- 
+ //creating a new query and checking if it is successful .
+//want to store the result into the variable , were using session connection 
+//cause thats where our connection is stored , and creating a table
+$query = $_SESSION["connection"]->query("CREATE TABLE users ("
+//id for the user
+. "id int(11) NOT NULL AUTO_INCREMENT," 
+. "username varchar(30) NOT NULL,"
+. "email varchar(50) NOT NULL,"
+. "password char(128) NOT NULL,"
+. "salt char(128) NOT NULL,"
+. "PRIMARY KEY (id))");
+
+//checking if query is working properly or not
+ if($query) {
+echo "<p> Successfully created table: users </p>";
+}
+else {
+echo "<p>" . $_SESSION["connection"]->error . "</p>";
+}
