@@ -11,6 +11,8 @@
 	//accessing footer.php
 	require_once(__DIR__ . "/view/footer.php");
 
+	require_once(__DIR__ . "/controller/read-posts.php");
+
 ?> 
 
 <!DOCTYPE html>

@@ -3,14 +3,9 @@
 require_once(__DIR__ . "/../model/config.php");
 ?> 
 
-<h1> Register </h1>
-<form method="post" action="<?php echo $path . "controller/create-user.php"; ?>">
-	<div>
-<!-- creates space for a users email -->
-<label for="email"> Email: </label>
-<input type="text" name="email"/>
-</div>
+<h1> Login </h1>
 
+<form  method="post" action="<?php echo $path . "controller/create-user.php"; ?>">
 <div> 
 <!-- creates a space for the user's username -->
 <label for="username"> Username: </label>
