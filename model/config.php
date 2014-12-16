@@ -1,4 +1,5 @@
 <?php
+
 //accessing info
 require_once(__DIR__ . "/Database.php");
 require_once(__DIR__ . "/date.php");
@@ -16,11 +17,11 @@ $password = "root";
 $database = "blog_db";
 
 //checking if the session variable excists . 
-if(!isset($_SESSION["connection"])) {
-	//creating new database object
-	$connection = new Database($host,$username,$password,$database);
-	//session variable,  were signing a value to it after the equal sign
-	$_SESSION["connection"] = $connection;
+if (!isset($_SESSION["connection"])) {
+    //creating new database object
+    $connection = new Database($host, $username, $password, $database);
+    //session variable,  were signing a value to it after the equal sign
+    $_SESSION["connection"] = $connection;
 }
 
 

@@ -1,23 +1,21 @@
 <?php
-	require_once(__DIR__ . "/../model/config.php");
 
-	$username = filter_input(INPUT_POST , "username" , FILTER_SANITIZE_STRING);
-	$password = filter_input(INPUT_POST , "password" , FILTER_SANITIZE_STRING);
+require_once(__DIR__ . "/../model/config.php");
 
-	$query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE username = '$username'");
+$username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
+$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 
-	if($query->num_rows == 1) {
-		$row = $query->fetch_array();
+$query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE username = '$username'");
 
-		if($row["password"] === crypt($password, $row["salt"])) {
-			$_SESSION["authenticated"] = true;
-			echo "<p> login successful! </p>";
-		}
-		else{
-		echo "<p> Invalid username and password </p> ";
-	}
-}
+if ($query->num_rows == 1) {
+    $row = $query->fetch_array();
 
-else{
-	echo "<p> invalid username and password </p>";
+    if ($row["password"] === crypt($password, $row["salt"])) {
+        $_SESSION["authenticated"] = true;
+        echo "<p> login successful! </p>";
+    } else {
+        echo "<p> Invalid username and password </p> ";
+    }
+} else {
+    echo "<p> invalid username and password </p>";
 }

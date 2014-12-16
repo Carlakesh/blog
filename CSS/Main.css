@@ -1,6 +1,7 @@
 body, html {
 	background-color: pink;
-}
+	}
+
 
 @media screen and (max-width: 320px) {
 	html{background: purple;
