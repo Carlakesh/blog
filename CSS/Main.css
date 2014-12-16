@@ -1,5 +1,8 @@
 body, html {
-	background-color: pink;
+	background-color: grey;
+	background-image: url("http://media-cache-ec0.pinimg.com/736x/bf/e2/75/bfe27557d4d6eb7d3dcffba51da04d50.jpg");
+	background-repeat: repeat-y;
+	background-size: 1500px;
 	}
 
 

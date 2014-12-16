@@ -1,17 +1,44 @@
-#navigation{
-background-color: purple;
+div {
+	border-style: solid;
+	border-width: 2px;
+border-color:black;
+}
+.container{
+	border-color: green;
+}
+
+.row {
+	border-color: red;
+}
+
+.Title {
+	border-color: black;
+}
+.navbar-fixed-top{
+background-image: url("../images/pink.jpg");
+height: 80px;
 }
 
 .navbar{
-	background-color: white;
+	
+	 background-image: url("../images/pink.jpg");
+	font-family: 'Salsa', cursive;
+	font-size: 20px;
+
+}
+
+a {
+	color: grey;
 }
 
 .containerr{
-	 background-color: red;
 	 padding-right: 30px;
+	 height: 30px;
+	 background-image: url("../images/pink.jpg");
 }
 
 .hi{
 	
 	padding-left: 800px;
 }
+

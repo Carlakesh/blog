@@ -26,3 +26,5 @@ if ($query) {
 else {
     echo "<p>" . $_SESSION["connection"]->error . "</p>";
 }
+
+header("Location: " . $path . "index.php");
