@@ -15,7 +15,7 @@
 	<nav id="navigation"> 
 	<div class="navbar"> 
 	<div class="containerr"> 
-	<ul id="menu-menu-1" class="nav navbar-nav navbar-right navbar-fixed-top"><li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"><a> Log in</a></li>
+	<ul id="menu-menu-1" class="nav navbar-nav navbar-right navbar-fixed-top"><li id="menu-item-24" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24"> <a href="http://localhost/phpblog/login.php"> Log in</a></li>
 <li id="menu-item-20" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-20"><a href="http://localhost/phpblog/login.php"> Log out</a></li>
 <li id="menu-item-21" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21"><a> Contact</a></li>
 </ul>
