@@ -6,6 +6,7 @@ body, html {
 	}
 
 
+
 @media screen and (max-width: 320px) {
 	html{background: purple;
 	}
@@ -13,5 +14,17 @@ body, html {
 
 @media screen and (max-width: 1024px) {
 	html{background: purple;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#hi, .col-xs-4{
+background: no-repeat;
+
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#navigation, .navbar , .containerr
 	}
 }

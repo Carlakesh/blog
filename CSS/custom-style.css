@@ -1,19 +1,25 @@
 div {
 	border-style: solid;
 	border-width: 2px;
-border-color:black;
+	border-color:black;
 }
 .container{
 	border-color: green;
 }
 
 .row {
-	border-color: red;
+	border-color: yellow;
 }
 
 .Title {
 	border-color: black;
+	font-family: 'Yesteryear', cursive;
+	text-align: center;
+	background-image: url("../images/pink.jpg");
+	font-size: 400px;
 }
+
+
 .navbar-fixed-top{
 background-image: url("../images/pink.jpg");
 height: 80px;
@@ -28,17 +34,17 @@ height: 80px;
 }
 
 a {
-	color: grey;
+	color: black;
+	font-size: 18px;
 }
 
 .containerr{
 	 padding-right: 30px;
-	 height: 30px;
 	 background-image: url("../images/pink.jpg");
 }
 
 .hi{
-	
 	padding-left: 800px;
+	margin-right: 500px;
 }
 
